@@ -78,6 +78,15 @@ class LoginVC: UIViewController {
         
     }
 
+    @IBAction func privacyBtnPressed(_ sender: Any) {
+        let url = URL(string: "http://gowhipit.com/privacypolicy.pdf")!
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(url)
+        }
+    }
+    
     func getDocumentsDirectory() -> URL {
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         let documentsDirectory = paths[0]
