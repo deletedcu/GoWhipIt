@@ -28,13 +28,13 @@
          contextName = "PublishVC.showPhoto() -&gt; ():PublishVC.swift">
          <PersistentStrings>
             <PersistentString
+               value = "filename.absoluteString()">
+            </PersistentString>
+            <PersistentString
                value = "filename.path">
             </PersistentString>
             <PersistentString
                value = "getDocumentsDirectory()">
-            </PersistentString>
-            <PersistentString
-               value = "filename.absoluteString()">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -68,6 +68,11 @@
       </ContextState>
       <ContextState
          contextName = "ShareVC.(sharePhoto() -&gt; ()).(closure #1):ShareVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "selectedPage">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
       <ContextState
          contextName = "ShareVC.getFacebookInfo() -&gt; ():ShareVC.swift">
@@ -102,6 +107,9 @@
       <ContextState
          contextName = "ShareVC.sharePhoto() -&gt; ():ShareVC.swift">
          <PersistentStrings>
+            <PersistentString
+               value = "AccessToken.current">
+            </PersistentString>
             <PersistentString
                value = "selectedPage">
             </PersistentString>

@@ -41,7 +41,7 @@ class ShareVC: UIViewController {
     var accessToken: String?
     var connection: GraphRequestConnection?
     var pageList: [Page] = []
-    var selectedPage: Page?
+    var selectedPage: Page!
     var delegate: ShareVCDelegate!
     
     override func viewDidLoad() {
@@ -101,10 +101,7 @@ class ShareVC: UIViewController {
         graphRequest.start { response, result in
             switch result {
             case .success(let response):
-                print("Custom Graph Request Succeeded: \(response)")
                 let json = JSON(response.dictionaryValue ?? [:])
-                print("My facebook id is \(json["id"].stringValue)")
-                print("My name is \(json["name"].stringValue)")
                 
                 let id = json["id"].stringValue
                 let name = json["name"].stringValue
@@ -128,10 +125,9 @@ class ShareVC: UIViewController {
             
             switch result {
             case .success(let response):
-                print("Custom Graph Request Succeeded: \(response)")
                 let json = JSON(response.dictionaryValue ?? [:])
                 for jsonData in json["data"].arrayValue {
-                    let page = Page(category: jsonData["category"].stringValue, id: jsonData["id"].stringValue, name: jsonData["name"].stringValue)
+                    let page = Page(category: jsonData["category"].stringValue, id: jsonData["id"].stringValue, name: jsonData["name"].stringValue, token: jsonData["access_token"].stringValue)
                     self.pageList.append(page)
                 }
                 if self.pageList.count > 0 {
@@ -152,7 +148,7 @@ class ShareVC: UIViewController {
     }
     
     func postPhoto() {
-        
+        captionTextField.endEditing(true)
         if (AccessToken.current?.grantedPermissions?.contains(Permission(name: "manage_pages")))! {
             sharePhoto()
         } else {
@@ -179,7 +175,10 @@ class ShareVC: UIViewController {
     func sharePhoto() {
         SwiftSpinner.show("Sharing to Facebook page...")
         let caption = captionTextField.text!
-        let graphRequest = GraphRequest(graphPath: "\(selectedPage?.id ?? "")/photos", parameters: ["url": imageURL, "caption": caption, "published": true], accessToken: AccessToken.current, httpMethod: .POST)
+        var currentToken = AccessToken.current!
+        currentToken = AccessToken(appId: currentToken.appId, authenticationToken: selectedPage.token, userId: currentToken.appId, refreshDate: currentToken.refreshDate, expirationDate: currentToken.expirationDate, grantedPermissions: currentToken.grantedPermissions, declinedPermissions: currentToken.declinedPermissions)
+        
+        let graphRequest = GraphRequest(graphPath: "\(selectedPage.id)/photos", parameters: ["url": imageURL, "caption": caption], accessToken: currentToken, httpMethod: .POST)
         graphRequest.start { response, result in
             SwiftSpinner.hide()
             print(result)

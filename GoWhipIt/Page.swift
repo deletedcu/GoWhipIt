@@ -13,11 +13,13 @@ class Page {
     var category: String
     var id: String
     var name: String
+    var token: String
     
-    init(category: String, id: String, name: String) {
+    init(category: String, id: String, name: String, token: String) {
         self.category = category
         self.id = id
         self.name = name
+        self.token = token
     }
     
 }

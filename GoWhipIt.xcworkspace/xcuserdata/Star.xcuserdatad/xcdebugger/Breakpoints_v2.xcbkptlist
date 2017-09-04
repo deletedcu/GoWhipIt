@@ -10,59 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GoWhipIt/ShareVC.swift"
-            timestampString = "526161840.257558"
+            timestampString = "526225858.291603"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
-            landmarkName = "facebookLogin()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "GoWhipIt.ShareVC.facebookLogin () -&gt; ()"
-                  moduleName = "GoWhipIt"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/Work/Work/ShareWork/Gowhipit/Gowhipit-V3.0/GoWhipIt/ShareVC.swift"
-                  timestampString = "526210546.762881"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "81"
-                  endingLineNumber = "81"
-                  offsetFromSymbolStart = "72">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "GoWhipIt.ShareVC.(facebookLogin () -&gt; ()).(closure #1)"
-                  moduleName = "GoWhipIt"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/Work/Work/ShareWork/Gowhipit/Gowhipit-V3.0/GoWhipIt/ShareVC.swift"
-                  timestampString = "526210546.765112"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "82"
-                  endingLineNumber = "82"
-                  offsetFromSymbolStart = "296">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "GoWhipIt/ShareVC.swift"
-            timestampString = "526161973.671065"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "184"
-            endingLineNumber = "184"
+            startingLineNumber = "185"
+            endingLineNumber = "185"
             landmarkName = "sharePhoto()"
             landmarkType = "7">
          </BreakpointContent>
@@ -74,45 +26,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GoWhipIt/ShareVC.swift"
-            timestampString = "526210236.940823"
+            timestampString = "526225912.077925"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "182"
-            endingLineNumber = "182"
+            startingLineNumber = "187"
+            endingLineNumber = "187"
             landmarkName = "sharePhoto()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "GoWhipIt.ShareVC.sharePhoto () -&gt; ()"
-                  moduleName = "GoWhipIt"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/Work/Work/ShareWork/Gowhipit/Gowhipit-V3.0/GoWhipIt/ShareVC.swift"
-                  timestampString = "526210546.772388"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "182"
-                  endingLineNumber = "182"
-                  offsetFromSymbolStart = "796">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "GoWhipIt.ShareVC.(sharePhoto () -&gt; ()).(implicit closure #1)"
-                  moduleName = "GoWhipIt"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/Work/Work/ShareWork/Gowhipit/Gowhipit-V3.0/GoWhipIt/ShareVC.swift"
-                  timestampString = "526210546.773726"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "182"
-                  endingLineNumber = "182"
-                  offsetFromSymbolStart = "16">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
