@@ -279,7 +279,7 @@ class PublishVC: UIViewController {
 //        }
         
         let actionSheet = UIAlertController(title: "Select Type", message: "Select the facebook post type.", preferredStyle: .actionSheet)
-        let profileAction = UIAlertAction(title: "Post to Facebook Profile", style: .default) { action in
+        let profileAction = UIAlertAction(title: "Share to Facebook Profile", style: .default) { action in
                     switch(Current.type) {
                     case "foto"  :
                         self.publishPhoto()
@@ -293,7 +293,7 @@ class PublishVC: UIViewController {
                     }
         }
 
-        let pageAction = UIAlertAction(title: "Post to Facebook Page", style: .default) { action in
+        let pageAction = UIAlertAction(title: "Share to Facebook Page", style: .default) { action in
             self.showShareVC()
         }
         
