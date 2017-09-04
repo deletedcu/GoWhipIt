@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "ShareVC.viewDidAppear(Bool) -&gt; ():ShareVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "AccessToken.current">
+            </PersistentString>
+            <PersistentString
+               value = "FBSDKAccessToken.current()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ShareVC.viewDidLoad() -&gt; ():ShareVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "AccessToken.current">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ShareVC.getPageList() -&gt; ():ShareVC.swift">
+      </ContextState>
+      <ContextState
+         contextName = "PublishVC.showPhoto() -&gt; ():PublishVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "filename.path">
+            </PersistentString>
+            <PersistentString
+               value = "getDocumentsDirectory()">
+            </PersistentString>
+            <PersistentString
+               value = "filename.absoluteString()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ShareVC.postPhoto() -&gt; ():ShareVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "AccessToken.current?.grantedPermissions">
+            </PersistentString>
+            <PersistentString
+               value = "">
+            </PersistentString>
+            <PersistentString
+               value = "imageURL">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ShareVC.(getFacebookInfo() -&gt; ()).(closure #1):ShareVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "JSON(response.dictionaryValue ?? [:])">
+            </PersistentString>
+            <PersistentString
+               value = "json[&quot;id&quot;].string">
+            </PersistentString>
+            <PersistentString
+               value = "response.dictionaryValue[&quot;id&quot;].debugDescription">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ShareVC.(sharePhoto() -&gt; ()).(closure #1):ShareVC.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ShareVC.getFacebookInfo() -&gt; ():ShareVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "connection">
+            </PersistentString>
+            <PersistentString
+               value = "AccessToken.current">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PublishVC.publishPhoto() -&gt; ():PublishVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "riversRef">
+            </PersistentString>
+            <PersistentString
+               value = "filename.path">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ShareVC.(getPageList() -&gt; ()).(closure #1):ShareVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "JSON(response.dictionaryValue ?? [:])">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ShareVC.sharePhoto() -&gt; ():ShareVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "selectedPage">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

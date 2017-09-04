@@ -1,0 +1,1000 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E1FD9CB1D80109F004EE44A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1FD9CA1D80109F004EE44A /* LoginVC.swift */; };
+		1E1FD9CE1D803B9B004EE44A /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1FD9CD1D803B9B004EE44A /* AuthService.swift */; };
+		1E1FD9D01D804CD6004EE44A /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1FD9CF1D804CD6004EE44A /* DataService.swift */; };
+		1E2524CC1D7E24B400E68179 /* RoundTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2524CB1D7E24B400E68179 /* RoundTextField.swift */; };
+		1E2524CE1D7E2A4400E68179 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2524CD1D7E2A4400E68179 /* RoundedButton.swift */; };
+		1E26D2A21DF5EC9F00ED0625 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1E26D2A11DF5EC9F00ED0625 /* GoogleService-Info.plist */; };
+		1E3AC0861D7DFBFF001F4588 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3AC0851D7DFBFF001F4588 /* AppDelegate.swift */; };
+		1E3AC0881D7DFBFF001F4588 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3AC0871D7DFBFF001F4588 /* CameraVC.swift */; };
+		1E3AC08B1D7DFBFF001F4588 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E3AC0891D7DFBFF001F4588 /* Main.storyboard */; };
+		1E3AC08D1D7DFBFF001F4588 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E3AC08C1D7DFBFF001F4588 /* Assets.xcassets */; };
+		1E3AC0901D7DFBFF001F4588 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E3AC08E1D7DFBFF001F4588 /* LaunchScreen.storyboard */; };
+		1E3AC09B1D7DFBFF001F4588 /* GoWhipItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3AC09A1D7DFBFF001F4588 /* GoWhipItTests.swift */; };
+		1E3AC0A61D7DFBFF001F4588 /* GoWhipItUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3AC0A51D7DFBFF001F4588 /* GoWhipItUITests.swift */; };
+		1E951DC01DDB5A0D004554D7 /* OUD_GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1E951DBF1DDB5A0D004554D7 /* OUD_GoogleService-Info.plist */; };
+		1EE6258C1D809CE300DC37A2 /* PublishVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE6258B1D809CE300DC37A2 /* PublishVC.swift */; };
+		52E5B3C4E06CC80516323749 /* Pods_GoWhipItUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53A14D6998718A811162AE7A /* Pods_GoWhipItUITests.framework */; };
+		6CE5BF4DB12BEBB2D6FB2E78 /* Pods_GoWhipItTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F5BE54F728B9134D6C26E8B /* Pods_GoWhipItTests.framework */; };
+		75959337E255D5C2682A0E57 /* Pods_GoWhipIt_GoWhipItTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58FD9B84624C02509B4B43B7 /* Pods_GoWhipIt_GoWhipItTests.framework */; };
+		9A39C5031D969BA50000529C /* SharedFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A39C5021D969BA50000529C /* SharedFunction.swift */; };
+		9A39C5051D969D7B0000529C /* customStructsClassWebor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A39C5041D969D7B0000529C /* customStructsClassWebor.swift */; };
+		9A39C5091D9923A10000529C /* overlay-test.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A39C5081D9923A10000529C /* overlay-test.png */; };
+		9A39C50B1D9BCD740000529C /* rec-red.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A39C50A1D9BCD740000529C /* rec-red.png */; };
+		9A39C50D1D9BCD790000529C /* rec-white.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A39C50C1D9BCD790000529C /* rec-white.png */; };
+		D6E367EA1E703C1A1C6F2FF8 /* Pods_GoWhipIt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 542E68D7EBB8EB48AD8F578B /* Pods_GoWhipIt.framework */; };
+		DC2B310CD6F121B15ADA6F6C /* Pods_GoWhipIt_GoWhipItUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99FFA2C22A1F63324E457E26 /* Pods_GoWhipIt_GoWhipItUITests.framework */; };
+		F86E67B01F596C3600B17200 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E67AF1F596C3600B17200 /* UIImageExtension.swift */; };
+		F8FF41A61F5884D600448DC4 /* ShareVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FF41A51F5884D600448DC4 /* ShareVC.swift */; };
+		F8FF41A91F59086C00448DC4 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FF41A81F59086C00448DC4 /* Page.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1E3AC0971D7DFBFF001F4588 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E3AC07A1D7DFBFF001F4588 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E3AC0811D7DFBFF001F4588;
+			remoteInfo = GoWhipIt;
+		};
+		1E3AC0A21D7DFBFF001F4588 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E3AC07A1D7DFBFF001F4588 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E3AC0811D7DFBFF001F4588;
+			remoteInfo = GoWhipIt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		16389F3A8ED0AEB6ABDF613C /* Pods-GoWhipIt-GoWhipItTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoWhipIt-GoWhipItTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoWhipIt-GoWhipItTests/Pods-GoWhipIt-GoWhipItTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1E15540E1DEC646900D1F08C /* GoWhipIt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GoWhipIt.entitlements; sourceTree = "<group>"; };
+		1E1FD9CA1D80109F004EE44A /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		1E1FD9CD1D803B9B004EE44A /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		1E1FD9CF1D804CD6004EE44A /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		1E2524CB1D7E24B400E68179 /* RoundTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundTextField.swift; sourceTree = "<group>"; };
+		1E2524CD1D7E2A4400E68179 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		1E26D2A11DF5EC9F00ED0625 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1E3AC0821D7DFBFF001F4588 /* GoWhipIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoWhipIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E3AC0851D7DFBFF001F4588 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1E3AC0871D7DFBFF001F4588 /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
+		1E3AC08A1D7DFBFF001F4588 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1E3AC08C1D7DFBFF001F4588 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1E3AC08F1D7DFBFF001F4588 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1E3AC0911D7DFBFF001F4588 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E3AC0961D7DFBFF001F4588 /* GoWhipItTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoWhipItTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E3AC09A1D7DFBFF001F4588 /* GoWhipItTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoWhipItTests.swift; sourceTree = "<group>"; };
+		1E3AC09C1D7DFBFF001F4588 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E3AC0A11D7DFBFF001F4588 /* GoWhipItUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoWhipItUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E3AC0A51D7DFBFF001F4588 /* GoWhipItUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoWhipItUITests.swift; sourceTree = "<group>"; };
+		1E3AC0A71D7DFBFF001F4588 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E53BA021DC77BC0009E4B0A /* GoWhipIt-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GoWhipIt-Bridging-Header.h"; sourceTree = "<group>"; };
+		1E951DBF1DDB5A0D004554D7 /* OUD_GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "OUD_GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1EE6258B1D809CE300DC37A2 /* PublishVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublishVC.swift; sourceTree = "<group>"; };
+		496C16811B1904708F83D56F /* Pods-GoWhipItTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoWhipItTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoWhipItTests/Pods-GoWhipItTests.release.xcconfig"; sourceTree = "<group>"; };
+		53A14D6998718A811162AE7A /* Pods_GoWhipItUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoWhipItUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		542E68D7EBB8EB48AD8F578B /* Pods_GoWhipIt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoWhipIt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58FD9B84624C02509B4B43B7 /* Pods_GoWhipIt_GoWhipItTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoWhipIt_GoWhipItTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65ED24A7809FAB5E642C1C2D /* Pods-GoWhipItTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoWhipItTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoWhipItTests/Pods-GoWhipItTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6686B3D01B0C5CD1DAA5E905 /* Pods-GoWhipIt-GoWhipItTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoWhipIt-GoWhipItTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoWhipIt-GoWhipItTests/Pods-GoWhipIt-GoWhipItTests.release.xcconfig"; sourceTree = "<group>"; };
+		6F5BE54F728B9134D6C26E8B /* Pods_GoWhipItTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoWhipItTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		99FFA2C22A1F63324E457E26 /* Pods_GoWhipIt_GoWhipItUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoWhipIt_GoWhipItUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A39C5021D969BA50000529C /* SharedFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedFunction.swift; sourceTree = "<group>"; };
+		9A39C5041D969D7B0000529C /* customStructsClassWebor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customStructsClassWebor.swift; sourceTree = "<group>"; };
+		9A39C5081D9923A10000529C /* overlay-test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "overlay-test.png"; sourceTree = "<group>"; };
+		9A39C50A1D9BCD740000529C /* rec-red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rec-red.png"; sourceTree = "<group>"; };
+		9A39C50C1D9BCD790000529C /* rec-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rec-white.png"; sourceTree = "<group>"; };
+		A64FEA9A9F2E50DCF07F94E0 /* Pods-GoWhipIt-GoWhipItUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoWhipIt-GoWhipItUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoWhipIt-GoWhipItUITests/Pods-GoWhipIt-GoWhipItUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C17FCC6FCBE619DA54FF1ABF /* Pods-GoWhipIt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoWhipIt.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoWhipIt/Pods-GoWhipIt.release.xcconfig"; sourceTree = "<group>"; };
+		C2DBF018D1ABFEA3E9A8E0BF /* Pods-GoWhipItUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoWhipItUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoWhipItUITests/Pods-GoWhipItUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D6D90490441EEDEDE85F9EC1 /* Pods-GoWhipItUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoWhipItUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoWhipItUITests/Pods-GoWhipItUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E2CC96F898FFF54924CF7977 /* Pods-GoWhipIt-GoWhipItUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoWhipIt-GoWhipItUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoWhipIt-GoWhipItUITests/Pods-GoWhipIt-GoWhipItUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F84BBD274A77C8AEEF1E6A6C /* Pods-GoWhipIt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoWhipIt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoWhipIt/Pods-GoWhipIt.debug.xcconfig"; sourceTree = "<group>"; };
+		F86E67AF1F596C3600B17200 /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		F8FF41A51F5884D600448DC4 /* ShareVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareVC.swift; sourceTree = "<group>"; };
+		F8FF41A81F59086C00448DC4 /* Page.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1E3AC07F1D7DFBFF001F4588 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6E367EA1E703C1A1C6F2FF8 /* Pods_GoWhipIt.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E3AC0931D7DFBFF001F4588 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CE5BF4DB12BEBB2D6FB2E78 /* Pods_GoWhipItTests.framework in Frameworks */,
+				75959337E255D5C2682A0E57 /* Pods_GoWhipIt_GoWhipItTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E3AC09E1D7DFBFF001F4588 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52E5B3C4E06CC80516323749 /* Pods_GoWhipItUITests.framework in Frameworks */,
+				DC2B310CD6F121B15ADA6F6C /* Pods_GoWhipIt_GoWhipItUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E1FD9CC1D803B89004EE44A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1E1FD9CD1D803B9B004EE44A /* AuthService.swift */,
+				1E1FD9CF1D804CD6004EE44A /* DataService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		1E3AC0791D7DFBFF001F4588 = {
+			isa = PBXGroup;
+			children = (
+				1E3AC0841D7DFBFF001F4588 /* GoWhipIt */,
+				1E3AC0991D7DFBFF001F4588 /* GoWhipItTests */,
+				1E3AC0A41D7DFBFF001F4588 /* GoWhipItUITests */,
+				1E3AC0831D7DFBFF001F4588 /* Products */,
+				CBB0FFEF259CF38DE7F7420B /* Pods */,
+				3232F624EE0BB5AC7D1999A9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1E3AC0831D7DFBFF001F4588 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1E3AC0821D7DFBFF001F4588 /* GoWhipIt.app */,
+				1E3AC0961D7DFBFF001F4588 /* GoWhipItTests.xctest */,
+				1E3AC0A11D7DFBFF001F4588 /* GoWhipItUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1E3AC0841D7DFBFF001F4588 /* GoWhipIt */ = {
+			isa = PBXGroup;
+			children = (
+				F86E67AE1F596C2100B17200 /* Extension */,
+				F8FF41A71F59085600448DC4 /* Model */,
+				1E15540E1DEC646900D1F08C /* GoWhipIt.entitlements */,
+				1E1FD9CC1D803B89004EE44A /* Services */,
+				9A39C5021D969BA50000529C /* SharedFunction.swift */,
+				9A39C5041D969D7B0000529C /* customStructsClassWebor.swift */,
+				1E3AC0BB1D7DFD79001F4588 /* Controller */,
+				1E3AC0BA1D7DFD73001F4588 /* View */,
+				1E3AC0851D7DFBFF001F4588 /* AppDelegate.swift */,
+				1E3AC0891D7DFBFF001F4588 /* Main.storyboard */,
+				1E3AC08C1D7DFBFF001F4588 /* Assets.xcassets */,
+				1E53BA021DC77BC0009E4B0A /* GoWhipIt-Bridging-Header.h */,
+				1E3AC08E1D7DFBFF001F4588 /* LaunchScreen.storyboard */,
+				1E3AC0911D7DFBFF001F4588 /* Info.plist */,
+				1E26D2A11DF5EC9F00ED0625 /* GoogleService-Info.plist */,
+				1E951DBF1DDB5A0D004554D7 /* OUD_GoogleService-Info.plist */,
+				9A39C5081D9923A10000529C /* overlay-test.png */,
+				9A39C50A1D9BCD740000529C /* rec-red.png */,
+				9A39C50C1D9BCD790000529C /* rec-white.png */,
+			);
+			path = GoWhipIt;
+			sourceTree = "<group>";
+		};
+		1E3AC0991D7DFBFF001F4588 /* GoWhipItTests */ = {
+			isa = PBXGroup;
+			children = (
+				1E3AC09A1D7DFBFF001F4588 /* GoWhipItTests.swift */,
+				1E3AC09C1D7DFBFF001F4588 /* Info.plist */,
+			);
+			path = GoWhipItTests;
+			sourceTree = "<group>";
+		};
+		1E3AC0A41D7DFBFF001F4588 /* GoWhipItUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1E3AC0A51D7DFBFF001F4588 /* GoWhipItUITests.swift */,
+				1E3AC0A71D7DFBFF001F4588 /* Info.plist */,
+			);
+			path = GoWhipItUITests;
+			sourceTree = "<group>";
+		};
+		1E3AC0BA1D7DFD73001F4588 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1E2524CB1D7E24B400E68179 /* RoundTextField.swift */,
+				1E2524CD1D7E2A4400E68179 /* RoundedButton.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		1E3AC0BB1D7DFD79001F4588 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1E3AC0871D7DFBFF001F4588 /* CameraVC.swift */,
+				1E1FD9CA1D80109F004EE44A /* LoginVC.swift */,
+				1EE6258B1D809CE300DC37A2 /* PublishVC.swift */,
+				F8FF41A51F5884D600448DC4 /* ShareVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		3232F624EE0BB5AC7D1999A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				542E68D7EBB8EB48AD8F578B /* Pods_GoWhipIt.framework */,
+				6F5BE54F728B9134D6C26E8B /* Pods_GoWhipItTests.framework */,
+				53A14D6998718A811162AE7A /* Pods_GoWhipItUITests.framework */,
+				58FD9B84624C02509B4B43B7 /* Pods_GoWhipIt_GoWhipItTests.framework */,
+				99FFA2C22A1F63324E457E26 /* Pods_GoWhipIt_GoWhipItUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CBB0FFEF259CF38DE7F7420B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F84BBD274A77C8AEEF1E6A6C /* Pods-GoWhipIt.debug.xcconfig */,
+				C17FCC6FCBE619DA54FF1ABF /* Pods-GoWhipIt.release.xcconfig */,
+				65ED24A7809FAB5E642C1C2D /* Pods-GoWhipItTests.debug.xcconfig */,
+				496C16811B1904708F83D56F /* Pods-GoWhipItTests.release.xcconfig */,
+				C2DBF018D1ABFEA3E9A8E0BF /* Pods-GoWhipItUITests.debug.xcconfig */,
+				D6D90490441EEDEDE85F9EC1 /* Pods-GoWhipItUITests.release.xcconfig */,
+				16389F3A8ED0AEB6ABDF613C /* Pods-GoWhipIt-GoWhipItTests.debug.xcconfig */,
+				6686B3D01B0C5CD1DAA5E905 /* Pods-GoWhipIt-GoWhipItTests.release.xcconfig */,
+				A64FEA9A9F2E50DCF07F94E0 /* Pods-GoWhipIt-GoWhipItUITests.debug.xcconfig */,
+				E2CC96F898FFF54924CF7977 /* Pods-GoWhipIt-GoWhipItUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F86E67AE1F596C2100B17200 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F86E67AF1F596C3600B17200 /* UIImageExtension.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		F8FF41A71F59085600448DC4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F8FF41A81F59086C00448DC4 /* Page.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1E3AC0811D7DFBFF001F4588 /* GoWhipIt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E3AC0AA1D7DFBFF001F4588 /* Build configuration list for PBXNativeTarget "GoWhipIt" */;
+			buildPhases = (
+				15639415B468196D00C5E541 /* [CP] Check Pods Manifest.lock */,
+				1E3AC07E1D7DFBFF001F4588 /* Sources */,
+				1E3AC07F1D7DFBFF001F4588 /* Frameworks */,
+				1E3AC0801D7DFBFF001F4588 /* Resources */,
+				4FC6052241B4F24B6FB2BE3F /* [CP] Embed Pods Frameworks */,
+				08C55BF3CE9D09C3C8A0B04E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoWhipIt;
+			productName = GoWhipIt;
+			productReference = 1E3AC0821D7DFBFF001F4588 /* GoWhipIt.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1E3AC0951D7DFBFF001F4588 /* GoWhipItTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E3AC0AD1D7DFBFF001F4588 /* Build configuration list for PBXNativeTarget "GoWhipItTests" */;
+			buildPhases = (
+				71219D3FF6AB95D3F079177C /* [CP] Check Pods Manifest.lock */,
+				1E3AC0921D7DFBFF001F4588 /* Sources */,
+				1E3AC0931D7DFBFF001F4588 /* Frameworks */,
+				1E3AC0941D7DFBFF001F4588 /* Resources */,
+				BD5F7438FDF7417AD7F4011F /* [CP] Embed Pods Frameworks */,
+				0AD1938FDB1D2383A4106B93 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E3AC0981D7DFBFF001F4588 /* PBXTargetDependency */,
+			);
+			name = GoWhipItTests;
+			productName = GoWhipItTests;
+			productReference = 1E3AC0961D7DFBFF001F4588 /* GoWhipItTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1E3AC0A01D7DFBFF001F4588 /* GoWhipItUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E3AC0B01D7DFBFF001F4588 /* Build configuration list for PBXNativeTarget "GoWhipItUITests" */;
+			buildPhases = (
+				F48AAB87266BDB69D8B4B106 /* [CP] Check Pods Manifest.lock */,
+				1E3AC09D1D7DFBFF001F4588 /* Sources */,
+				1E3AC09E1D7DFBFF001F4588 /* Frameworks */,
+				1E3AC09F1D7DFBFF001F4588 /* Resources */,
+				D8968301E155509B90B59344 /* [CP] Copy Pods Resources */,
+				D15D845852D93EEBDACC6461 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E3AC0A31D7DFBFF001F4588 /* PBXTargetDependency */,
+			);
+			name = GoWhipItUITests;
+			productName = GoWhipItUITests;
+			productReference = 1E3AC0A11D7DFBFF001F4588 /* GoWhipItUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1E3AC07A1D7DFBFF001F4588 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = CommunicatieToegepast;
+				TargetAttributes = {
+					1E3AC0811D7DFBFF001F4588 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 78DHE2XA2N;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
+					1E3AC0951D7DFBFF001F4588 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 286ZNRR5V9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1E3AC0811D7DFBFF001F4588;
+					};
+					1E3AC0A01D7DFBFF001F4588 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 286ZNRR5V9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1E3AC0811D7DFBFF001F4588;
+					};
+				};
+			};
+			buildConfigurationList = 1E3AC07D1D7DFBFF001F4588 /* Build configuration list for PBXProject "GoWhipIt" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1E3AC0791D7DFBFF001F4588;
+			productRefGroup = 1E3AC0831D7DFBFF001F4588 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1E3AC0811D7DFBFF001F4588 /* GoWhipIt */,
+				1E3AC0951D7DFBFF001F4588 /* GoWhipItTests */,
+				1E3AC0A01D7DFBFF001F4588 /* GoWhipItUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1E3AC0801D7DFBFF001F4588 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E3AC0901D7DFBFF001F4588 /* LaunchScreen.storyboard in Resources */,
+				1E26D2A21DF5EC9F00ED0625 /* GoogleService-Info.plist in Resources */,
+				9A39C5091D9923A10000529C /* overlay-test.png in Resources */,
+				9A39C50B1D9BCD740000529C /* rec-red.png in Resources */,
+				1E3AC08D1D7DFBFF001F4588 /* Assets.xcassets in Resources */,
+				1E3AC08B1D7DFBFF001F4588 /* Main.storyboard in Resources */,
+				9A39C50D1D9BCD790000529C /* rec-white.png in Resources */,
+				1E951DC01DDB5A0D004554D7 /* OUD_GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E3AC0941D7DFBFF001F4588 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E3AC09F1D7DFBFF001F4588 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08C55BF3CE9D09C3C8A0B04E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoWhipIt/Pods-GoWhipIt-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0AD1938FDB1D2383A4106B93 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoWhipIt-GoWhipItTests/Pods-GoWhipIt-GoWhipItTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		15639415B468196D00C5E541 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoWhipIt-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4FC6052241B4F24B6FB2BE3F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GoWhipIt/Pods-GoWhipIt-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/CameraManager/CameraManager.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher-Core/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftSpinner/SwiftSpinner.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CameraManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSpinner.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoWhipIt/Pods-GoWhipIt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71219D3FF6AB95D3F079177C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoWhipIt-GoWhipItTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD5F7438FDF7417AD7F4011F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GoWhipIt-GoWhipItTests/Pods-GoWhipIt-GoWhipItTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/CameraManager/CameraManager.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher.default-Core/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftSpinner/SwiftSpinner.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CameraManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSpinner.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoWhipIt-GoWhipItTests/Pods-GoWhipIt-GoWhipItTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D15D845852D93EEBDACC6461 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GoWhipIt-GoWhipItUITests/Pods-GoWhipIt-GoWhipItUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/CameraManager/CameraManager.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher.default-Core/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftSpinner/SwiftSpinner.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CameraManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSpinner.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoWhipIt-GoWhipItUITests/Pods-GoWhipIt-GoWhipItUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8968301E155509B90B59344 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoWhipIt-GoWhipItUITests/Pods-GoWhipIt-GoWhipItUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F48AAB87266BDB69D8B4B106 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoWhipIt-GoWhipItUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1E3AC07E1D7DFBFF001F4588 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E1FD9D01D804CD6004EE44A /* DataService.swift in Sources */,
+				F8FF41A61F5884D600448DC4 /* ShareVC.swift in Sources */,
+				F8FF41A91F59086C00448DC4 /* Page.swift in Sources */,
+				1E3AC0881D7DFBFF001F4588 /* CameraVC.swift in Sources */,
+				1EE6258C1D809CE300DC37A2 /* PublishVC.swift in Sources */,
+				1E2524CE1D7E2A4400E68179 /* RoundedButton.swift in Sources */,
+				9A39C5031D969BA50000529C /* SharedFunction.swift in Sources */,
+				1E1FD9CB1D80109F004EE44A /* LoginVC.swift in Sources */,
+				1E3AC0861D7DFBFF001F4588 /* AppDelegate.swift in Sources */,
+				F86E67B01F596C3600B17200 /* UIImageExtension.swift in Sources */,
+				1E2524CC1D7E24B400E68179 /* RoundTextField.swift in Sources */,
+				1E1FD9CE1D803B9B004EE44A /* AuthService.swift in Sources */,
+				9A39C5051D969D7B0000529C /* customStructsClassWebor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E3AC0921D7DFBFF001F4588 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E3AC09B1D7DFBFF001F4588 /* GoWhipItTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E3AC09D1D7DFBFF001F4588 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E3AC0A61D7DFBFF001F4588 /* GoWhipItUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1E3AC0981D7DFBFF001F4588 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E3AC0811D7DFBFF001F4588 /* GoWhipIt */;
+			targetProxy = 1E3AC0971D7DFBFF001F4588 /* PBXContainerItemProxy */;
+		};
+		1E3AC0A31D7DFBFF001F4588 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E3AC0811D7DFBFF001F4588 /* GoWhipIt */;
+			targetProxy = 1E3AC0A21D7DFBFF001F4588 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1E3AC0891D7DFBFF001F4588 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1E3AC08A1D7DFBFF001F4588 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1E3AC08E1D7DFBFF001F4588 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1E3AC08F1D7DFBFF001F4588 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1E3AC0A81D7DFBFF001F4588 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: takis tap (78DHE2XA2N)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: takis tap (78DHE2XA2N)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 78DHE2XA2N;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "GoWhipIt-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1E3AC0A91D7DFBFF001F4588 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: takis tap (78DHE2XA2N)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: takis tap (78DHE2XA2N)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 78DHE2XA2N;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "GoWhipIt-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1E3AC0AB1D7DFBFF001F4588 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F84BBD274A77C8AEEF1E6A6C /* Pods-GoWhipIt.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = GoWhipIt/GoWhipIt.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 78DHE2XA2N;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = GoWhipIt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.communicatietoegepast.nl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5625d8fd-0648-44ad-8e72-f1ef83ae2723";
+				PROVISIONING_PROFILE_SPECIFIER = GoWhipItDev;
+				SWIFT_OBJC_BRIDGING_HEADER = "GoWhipIt/GoWhipIt-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1E3AC0AC1D7DFBFF001F4588 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C17FCC6FCBE619DA54FF1ABF /* Pods-GoWhipIt.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = GoWhipIt/GoWhipIt.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 78DHE2XA2N;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = GoWhipIt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.communicatietoegepast.nl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5625d8fd-0648-44ad-8e72-f1ef83ae2723";
+				PROVISIONING_PROFILE_SPECIFIER = GoWhipItDev;
+				SWIFT_OBJC_BRIDGING_HEADER = "GoWhipIt/GoWhipIt-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		1E3AC0AE1D7DFBFF001F4588 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16389F3A8ED0AEB6ABDF613C /* Pods-GoWhipIt-GoWhipItTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 286ZNRR5V9;
+				INFOPLIST_FILE = GoWhipItTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CommunicatieToegepast.GoWhipItTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoWhipIt.app/GoWhipIt";
+			};
+			name = Debug;
+		};
+		1E3AC0AF1D7DFBFF001F4588 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6686B3D01B0C5CD1DAA5E905 /* Pods-GoWhipIt-GoWhipItTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 286ZNRR5V9;
+				INFOPLIST_FILE = GoWhipItTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CommunicatieToegepast.GoWhipItTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoWhipIt.app/GoWhipIt";
+			};
+			name = Release;
+		};
+		1E3AC0B11D7DFBFF001F4588 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A64FEA9A9F2E50DCF07F94E0 /* Pods-GoWhipIt-GoWhipItUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 286ZNRR5V9;
+				INFOPLIST_FILE = GoWhipItUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CommunicatieToegepast.GoWhipItUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = GoWhipIt;
+			};
+			name = Debug;
+		};
+		1E3AC0B21D7DFBFF001F4588 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2CC96F898FFF54924CF7977 /* Pods-GoWhipIt-GoWhipItUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 286ZNRR5V9;
+				INFOPLIST_FILE = GoWhipItUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CommunicatieToegepast.GoWhipItUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = GoWhipIt;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1E3AC07D1D7DFBFF001F4588 /* Build configuration list for PBXProject "GoWhipIt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E3AC0A81D7DFBFF001F4588 /* Debug */,
+				1E3AC0A91D7DFBFF001F4588 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E3AC0AA1D7DFBFF001F4588 /* Build configuration list for PBXNativeTarget "GoWhipIt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E3AC0AB1D7DFBFF001F4588 /* Debug */,
+				1E3AC0AC1D7DFBFF001F4588 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E3AC0AD1D7DFBFF001F4588 /* Build configuration list for PBXNativeTarget "GoWhipItTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E3AC0AE1D7DFBFF001F4588 /* Debug */,
+				1E3AC0AF1D7DFBFF001F4588 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E3AC0B01D7DFBFF001F4588 /* Build configuration list for PBXNativeTarget "GoWhipItUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E3AC0B11D7DFBFF001F4588 /* Debug */,
+				1E3AC0B21D7DFBFF001F4588 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1E3AC07A1D7DFBFF001F4588 /* Project object */;
+}
