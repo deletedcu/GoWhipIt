@@ -3,19 +3,33 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "ShareVC.viewDidAppear(Bool) -&gt; ():ShareVC.swift">
+         contextName = "ShareVC.(getFacebookInfo() -&gt; ()).(closure #1):ShareVC.swift">
          <PersistentStrings>
             <PersistentString
-               value = "AccessToken.current">
+               value = "JSON(response.dictionaryValue ?? [:])">
             </PersistentString>
             <PersistentString
-               value = "FBSDKAccessToken.current()">
+               value = "json[&quot;id&quot;].string">
+            </PersistentString>
+            <PersistentString
+               value = "response.dictionaryValue[&quot;id&quot;].debugDescription">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "ShareVC.viewDidLoad() -&gt; ():ShareVC.swift">
+         contextName = "LoginVC.viewDidAppear(Bool) -&gt; ():LoginVC.swift">
          <PersistentStrings>
+            <PersistentString
+               value = "FIRAuth.auth()?.currentUser?.email">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ShareVC.getFacebookInfo() -&gt; ():ShareVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "connection">
+            </PersistentString>
             <PersistentString
                value = "AccessToken.current">
             </PersistentString>
@@ -23,20 +37,6 @@
       </ContextState>
       <ContextState
          contextName = "ShareVC.getPageList() -&gt; ():ShareVC.swift">
-      </ContextState>
-      <ContextState
-         contextName = "PublishVC.showPhoto() -&gt; ():PublishVC.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "filename.absoluteString()">
-            </PersistentString>
-            <PersistentString
-               value = "filename.path">
-            </PersistentString>
-            <PersistentString
-               value = "getDocumentsDirectory()">
-            </PersistentString>
-         </PersistentStrings>
       </ContextState>
       <ContextState
          contextName = "ShareVC.postPhoto() -&gt; ():ShareVC.swift">
@@ -53,35 +53,40 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "ShareVC.(getFacebookInfo() -&gt; ()).(closure #1):ShareVC.swift">
+         contextName = "ShareVC.viewDidLoad() -&gt; ():ShareVC.swift">
          <PersistentStrings>
             <PersistentString
-               value = "JSON(response.dictionaryValue ?? [:])">
-            </PersistentString>
-            <PersistentString
-               value = "json[&quot;id&quot;].string">
-            </PersistentString>
-            <PersistentString
-               value = "response.dictionaryValue[&quot;id&quot;].debugDescription">
+               value = "AccessToken.current">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "ShareVC.(sharePhoto() -&gt; ()).(closure #1):ShareVC.swift">
+         contextName = "ShareVC.sharePhoto() -&gt; ():ShareVC.swift">
          <PersistentStrings>
+            <PersistentString
+               value = "AccessToken.current">
+            </PersistentString>
             <PersistentString
                value = "selectedPage">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "ShareVC.getFacebookInfo() -&gt; ():ShareVC.swift">
+         contextName = "ShareVC.(getPageList() -&gt; ()).(closure #1):ShareVC.swift">
          <PersistentStrings>
             <PersistentString
-               value = "connection">
+               value = "JSON(response.dictionaryValue ?? [:])">
             </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ShareVC.viewDidAppear(Bool) -&gt; ():ShareVC.swift">
+         <PersistentStrings>
             <PersistentString
                value = "AccessToken.current">
+            </PersistentString>
+            <PersistentString
+               value = "FBSDKAccessToken.current()">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -97,19 +102,22 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "ShareVC.(getPageList() -&gt; ()).(closure #1):ShareVC.swift">
+         contextName = "PublishVC.showPhoto() -&gt; ():PublishVC.swift">
          <PersistentStrings>
             <PersistentString
-               value = "JSON(response.dictionaryValue ?? [:])">
+               value = "getDocumentsDirectory()">
+            </PersistentString>
+            <PersistentString
+               value = "filename.path">
+            </PersistentString>
+            <PersistentString
+               value = "filename.absoluteString()">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "ShareVC.sharePhoto() -&gt; ():ShareVC.swift">
+         contextName = "ShareVC.(sharePhoto() -&gt; ()).(closure #1):ShareVC.swift">
          <PersistentStrings>
-            <PersistentString
-               value = "AccessToken.current">
-            </PersistentString>
             <PersistentString
                value = "selectedPage">
             </PersistentString>

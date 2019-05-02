@@ -31,9 +31,11 @@ class LoginVC: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         
         guard FIRAuth.auth()?.currentUser == nil else {
-            performSegue(withIdentifier: "loggedIn", sender: nil)
+            guard usrDefaults.string(forKey: "loggedInUser") == nil else {
+                performSegue(withIdentifier: "loggedIn", sender: nil)
+                return
+            }
             return
-            
         }
         
     }
@@ -61,10 +63,12 @@ class LoginVC: UIViewController {
                 
                 // Set USERID to local storage
                 self.usrDefaults.setValue(email, forKey: "loggedInUser")
-                self.saveImageOverlay()
+                self.saveImageOverlay(completion: { (state) in
+                    self.performSegue(withIdentifier: "loggedIn", sender: self)
+                })
                 
                 //self.dismiss(animated: true, completion: nil)
-                self.performSegue(withIdentifier: "loggedIn", sender: self)
+                
                 
             })
             
@@ -93,7 +97,7 @@ class LoginVC: UIViewController {
         return documentsDirectory
     }
     
-    func saveImageOverlay()
+    func saveImageOverlay(completion: @escaping (Bool) -> ())
     {
         let fileManager = FileManager.default
         let filename = getDocumentsDirectory().appendingPathComponent("photoframe.png")
@@ -104,20 +108,25 @@ class LoginVC: UIViewController {
         
         let userName = usrDefaults.string(forKey: "loggedInUser")
         
-        let storage = FIRStorage.storage()
-        var reference: FIRStorageReference!
-        reference = storage.reference(forURL: "gs://gowhipit-62818.appspot.com/Overlays/"+userName!+"/photoframe.png")
-        reference.downloadURL { (url, error) in
-            let data = NSData(contentsOf: url!)
-            let image = UIImage(data: data! as Data)
-            if let data = UIImagePNGRepresentation(image!) {
-                
-                let filename = self.getDocumentsDirectory().appendingPathComponent("photoframe.png")
-                try? data.write(to: filename)
-                let nc = NotificationCenter.default
-                nc.post(name: Foundation.Notification.Name(rawValue: "RefreshOverlay"), object: nil);
-                
+        let storageRef = FIRStorage.storage().reference()
+        let photoRef = storageRef.child("Overlays").child(userName!).child("photoframe.png")
+        photoRef.downloadURL { (url, error) in
+            if error == nil {
+                let data = NSData(contentsOf: url!)
+                let image = UIImage(data: data! as Data)
+                if let data = UIImagePNGRepresentation(image!) {
+                    
+                    let filename = self.getDocumentsDirectory().appendingPathComponent("photoframe.png")
+                    try? data.write(to: filename)
+                    let nc = NotificationCenter.default
+                    nc.post(name: Foundation.Notification.Name(rawValue: "RefreshOverlay"), object: nil);
+                    completion(true)
+                }
+            } else {
+                print(error?.localizedDescription ?? "")
+                completion(false)
             }
+            
         }
     }
 }

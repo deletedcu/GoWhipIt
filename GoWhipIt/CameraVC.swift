@@ -120,17 +120,53 @@ class CameraVC:  UIViewController {
         let fileManager = FileManager.default
         
         if fileManager.fileExists(atPath: filename.path) {
-            var topImage = UIImage()
-            overlayView.image = topImage
-            
-            topImage = UIImage(contentsOfFile: filename.path)!
+            guard let topImage = UIImage(contentsOfFile: filename.path) else {
+                saveImageOverlay()
+                return
+            }
             overlayView.image = topImage
         }else{
             print("Overlay image bestaat nog niet")
-            
+            saveImageOverlay()
         }
     }
     
+    func saveImageOverlay()
+    {
+        let fileManager = FileManager.default
+        let filename = getDocumentsDirectory().appendingPathComponent("photoframe.png")
+        if fileManager.fileExists(atPath: filename.path) {
+            
+            try! fileManager.removeItem(atPath: filename.path)
+        }
+        
+        let usrDefaults = UserDefaults.standard
+        let userName = usrDefaults.string(forKey: "loggedInUser")
+        
+        let storageRef = FIRStorage.storage().reference()
+        let photoRef = storageRef.child("Overlays").child(userName!).child("photoframe.png")
+        photoRef.downloadURL { (url, error) in
+            if error == nil {
+                let data = NSData(contentsOf: url!)
+                let image = UIImage(data: data! as Data)
+                if let data = UIImagePNGRepresentation(image!) {
+                    
+                    let filename = self.getDocumentsDirectory().appendingPathComponent("photoframe.png")
+                    try? data.write(to: filename)
+                    let nc = NotificationCenter.default
+                    nc.post(name: Foundation.Notification.Name(rawValue: "RefreshOverlay"), object: nil);
+                    
+                    guard let topImage = UIImage(contentsOfFile: filename.path) else {
+                        return
+                    }
+                    self.overlayView.image = topImage
+                }
+            } else {
+                print(error!.localizedDescription)
+            }
+            
+        }
+    }
     
     func setupCamera()
     {
